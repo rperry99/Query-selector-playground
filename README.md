@@ -1,6 +1,6 @@
 # Query Selector Playground
 
-![Screenshot of user highlighting all of the items with specific attribute.](screenshot.png)
+![Screenshot of the "Select Ice Types" filter being used.](image.png)
 
 I am practicing my query selector knowledge by creating a little app that shows selecting different pieces of a table using buttons.
 
