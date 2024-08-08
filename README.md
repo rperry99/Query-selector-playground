@@ -14,3 +14,4 @@ You can check out a live version of this project hosted on GitHub Pages [here](h
 - You can select specific rows or cells, that have pre-determined attributes.
   - The "Glaceon" and "Talonflame" rows have this data attribute.
   - The cells "Weavile" and "Arcanine" have this data attribute.
+- You can select only the ice type Pokemon while not selecting the header row.
