@@ -8,5 +8,5 @@ When you click on a button, it will highlight certain parts of certain tables. A
 
 - You can select all the odd number rows in both tables.
 - You can select specific rows or cells, that have pre-determined attributes.
-  - The "Sonic" and "Yoshi" rows have this data attribute.
-  - The cells "Kirby" and "Samus" have this data attribute.
+  - The "Glaceon" and "Talonflame" rows have this data attribute.
+  - The cells "Weavile" and "Arcanine" have this data attribute.

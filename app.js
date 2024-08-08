@@ -1,7 +1,7 @@
 // Grab all the buttons
 const selectOddBtn = document.getElementById("selectOdd");
 const selectDataAttrBtn = document.getElementById("selectDataAttr");
-const selectOnlySuccessBtn = document.getElementById("selectOnlySuccess");
+const selectOnlyIceTypesBtn = document.getElementById("selectOnlyIceTypes");
 
 // Grab Table elements
 const tablesList = document.querySelectorAll('.table-group table');
@@ -42,7 +42,7 @@ function selectDataAttr() {
     stripUnusedClasses();
     selectDataAttrBtn.classList.add("active");
 
-    selectionDesc.innerHTML = 'Using <code>document.querySelectorAll("tr[data-selected=\'true\'], td[data-selected=\'true\'])</code> along with a for loop, I am able to select any rows or cells that have <code>data-selected=\'true\'</code> attribute.<br><br>The rows with "Sonic" and "Yoshi" have this data-selected attribute. The cells for the names "Samus" and "Kirby" also have this attribute.'
+    selectionDesc.innerHTML = 'Using <code>document.querySelectorAll("tr[data-selected=\'true\'], td[data-selected=\'true\'])</code> along with a for loop, I am able to select any rows or cells that have <code>data-selected=\'true\'</code> attribute.<br><br>The rows with "Glaceon" and "Talonflame" have this data-selected attribute. <br><br>The cells for the names "Weavile" and "Arcanine" also have this attribute.'
 
     const selectPreSelectedItems = document.querySelectorAll("tr[data-selected='true'], td[data-selected='true']");
     for (let item = 0; item < selectPreSelectedItems.length; item++){
@@ -50,9 +50,9 @@ function selectDataAttr() {
     }
 }
 
-function selectOnlySuccess() {
+function selectOnlyIce() {
     stripUnusedClasses();
-    selectOnlySuccessBtn.classList.add("active");
+    selectOnlyIceBtn.classList.add("active");
 }
 
 // Helper Functions
