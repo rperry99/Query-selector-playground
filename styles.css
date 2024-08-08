@@ -60,8 +60,10 @@ th, td {
 /* Button Styles */
 .button-group {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    row-gap: 20px;
     justify-content: space-around;
     border: solid 2px var(--main-color);
     padding: 10px;
