@@ -10,6 +10,7 @@ const selectOnlyIceTypesBtn = document.getElementById("selectOnlyIceTypes");
 // Grab Table elements
 const tablesList = document.querySelectorAll('.table-group table');
 const rowsList = document.querySelectorAll('.table-group tr');
+const rowsWithData = document.querySelectorAll('.table-group tr:not(first-child)')
 const cellsList = document.querySelectorAll('.table-group td, .table-group th');
 
 // Grab the description for what is being selected.
@@ -64,6 +65,21 @@ function selectOnlyIce() {
     const iceTypes = iceTable.querySelectorAll("tr :not(th)");
     for (let iceType = 0; iceType < iceTypes.length; iceType++){
         iceTypes[iceType].classList.add("highlight");
+    }
+}
+
+// Function to select only the strong pokemon (BST 530+)
+function selectStrong(button){
+    stripUnusedClasses();
+    button.classList.add("active");
+
+    selectionDesc.innerHTML = 'Queries all of the rows and looks for any base stat total above 530 by querying <code>rowsWithData[mon].querySelector("td:last-child")</code> from within a for loop.'
+
+    for (let mon = 1; mon < rowsWithData.length; mon++){
+        let bstCell = rowsWithData[mon].querySelector("td:last-child");
+        if (bstCell && Number(bstCell.innerHTML) >= 530){
+            rowsWithData[mon].classList.add("highlight");
+        }
     }
 }
 

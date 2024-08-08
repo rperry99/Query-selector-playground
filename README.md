@@ -15,3 +15,4 @@ You can check out a live version of this project hosted on GitHub Pages [here](h
   - The "Glaceon" and "Talonflame" rows have this data attribute.
   - The cells "Weavile" and "Arcanine" have this data attribute.
 - You can select only the ice type Pokemon while not selecting the header row.
+- You can select all of the Pokemon with a base stat total of 530 and above.
