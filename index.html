@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content-container">
+
+        <h1>Query Selector Playground</h1>
+
+        <div class="table-group">
+
+            <div class="table1">
+                <h2>Success Table</h2>
+                <table border="1" class="success-table table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>873671</td>
+                        <td>Mario</td>
+                        <td>1,800</td>
+                    </tr>
+                    <tr data-selected="true">
+                        <td>511892</td>
+                        <td>Sonic</td>
+                        <td>1,651</td>
+                    </tr>
+                    <tr>
+                        <td>600401</td>
+                        <td data-selected="true">Samus</td>
+                        <td>1,623</td>
+                    </tr>
+                    <tr>
+                        <td>741125</td>
+                        <td>Lucario</td>
+                        <td>1,409</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="table2">
+
+                <h2>Fail Table</h2>
+                <table border="1" class="fail-table table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>833102</td>
+                        <td data-selected="true">Kirby</td>
+                        <td>941</td>
+                    </tr>
+                    <tr>
+                        <td>699128</td>
+                        <td>Pikachu</td>
+                        <td>899</td>
+                    </tr>
+                    <tr>
+                        <td>846546</td>
+                        <td>Donkey Kong</td>
+                        <td>547</td>
+                    </tr>
+                    <tr data-selected="true">
+                        <td>742125</td>
+                        <td>Yoshi</td>
+                        <td>241</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <p class="selection-description">Click on the buttons below to select various different items in the tables.</p>
+
+        <div class="button-group">
+            <button id="selectOdd" onclick="selectOdd()">Select Odd Rows</button>
+            <button id="selectDataAttr" onclick="selectDataAttr()">Select using Data Attribute</button>
+            <button id="selectOnlySuccess" onclick="selectOnlySuccess()">Select Success Table</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
