@@ -1,3 +1,7 @@
+// Grab Specific Tables
+const iceTable = document.querySelector('.ice-table');
+const fireTable = document.querySelector('.fire-table');
+
 // Grab all the buttons
 const selectOddBtn = document.getElementById("selectOdd");
 const selectDataAttrBtn = document.getElementById("selectDataAttr");
@@ -50,9 +54,17 @@ function selectDataAttr() {
     }
 }
 
+// Function to select only the ice type pokemon.
 function selectOnlyIce() {
     stripUnusedClasses();
-    selectOnlyIceBtn.classList.add("active");
+    selectOnlyIceTypesBtn.classList.add("active");
+
+    selectionDesc.innerHTML = 'Querying only on the Ice Table, and using <code>querySelectorAll("tr: not(th)")</code> plus a for loop, I am able to highlight only the ice type Pokemon, while excluding the header row.'
+
+    const iceTypes = iceTable.querySelectorAll("tr :not(th)");
+    for (let iceType = 0; iceType < iceTypes.length; iceType++){
+        iceTypes[iceType].classList.add("highlight");
+    }
 }
 
 // Helper Functions
